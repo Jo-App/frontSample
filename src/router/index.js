@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import test from '../components/test.vue';
+import MultiUploader from '../components/MultiUploader.vue';
 
 
 Vue.use(VueRouter);
@@ -14,6 +15,13 @@ const routes = [
       content: test,
     },
   },
+  {
+    path: '/MultiUploader',
+    name: 'MultiUploader',
+    components: {
+      content: MultiUploader,
+    },
+  }
 ]
 
 
